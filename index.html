@@ -179,6 +179,12 @@ footer{border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font
 footer b{color:var(--ink)}
 footer a{color:var(--accent)}
 .unoff{display:inline-block;font-size:.72rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:middle;font-family:var(--f-body)}
+.meta2{font-size:.88rem;color:var(--muted)}.meta2 b{color:var(--ink);font-weight:500}
+.mv2{display:grid;grid-template-columns:auto auto 1fr;gap:4px 10px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line)}
+.mv2:last-child{border-bottom:0}
+.mv2 .dc{font-size:.8rem;color:var(--muted)}
+.mv2 .ef{grid-column:1/-1;font-size:.86rem;color:var(--muted)}
+.mv2 .sig{color:#7a4cf0}
 .empty{color:var(--muted);text-align:center;padding:28px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.bar i{transition:none}}
@@ -196,7 +202,7 @@ footer a{color:var(--accent)}
     <div class="sugg" id="sugg" role="listbox" hidden></div>
   </div>
   <div class="hint">빠른 검색:
-    <button data-q="한카리아스">한카리아스</button><button data-q="님피아">님피아</button><button data-q="강철톤">강철톤</button><button data-q="마기라스">마기라스</button><button data-q="갸라도스">갸라도스</button><button data-q="라이츄 알로라">라이츄 알로라</button>
+    <button data-q="한카리아스">한카리아스</button><button data-q="님피아">님피아</button><button data-q="강철톤">강철톤</button><button data-q="마기라스">마기라스</button><button data-q="갸라도스">갸라도스</button><button data-q="라이츄 알로라">라이츄 알로라</button><button data-q="승연닌자">승연닌자</button><button data-q="연준나이퍼">연준나이퍼</button>
   </div>
 
   <main id="out"></main>
@@ -205,6 +211,7 @@ footer a{color:var(--accent)}
     <p><b>비공식 팬 사이트입니다.</b> 이 사이트는 Nintendo, Game Freak, The Pokémon Company, Creatures Inc.와 관련이 없으며, 이들로부터 후원·승인을 받지 않았습니다. 포켓몬 및 관련 명칭은 각 권리자의 상표입니다.</p>
     <p>종족값·타입·특성 이름 데이터: <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokeAPI</a>. 특성 설명은 이 사이트에서 직접 요약한 글입니다.<br>
     랭크 배틀 순위·기술·메가스톤 채용률: <a href="https://championsbattledata.com/" target="_blank" rel="noopener">Pokemon Champions Battle Data</a>에서 가져왔으며, 해당 사이트의 후원이나 승인을 의미하지 않습니다.</p>
+    <p>승연닌자·연준나이퍼와 천재 타입은 이 사이트의 오리지널 팬 창작이며 실제 게임에는 없습니다.</p>
     <p>비상업적으로 운영하며 광고를 싣지 않습니다. 권리자의 요청이 있으면 해당 내용을 바로 삭제합니다.</p>
   </footer>
 </div>
@@ -214,13 +221,29 @@ footer a{color:var(--accent)}
 <script id="rank" type="application/json">{"rank":{"445":[1,7],"373":[2,4],"730":[3,42],"998":[4,38],"448":[5,34],"450":[6,0],"768":[7,9],"1018":[8,11],"1000":[9,10],"778":[10,74],"812":[11,1],"908":[12,67],"6":[13,16],"823":[14,45],"970":[15,44],"903":[16,2],"815":[17,88],"130":[18,93],"902":[19,8],"681":[20,81],"376":[21,26],"876":[22,25],"658":[23,91],"149":[24,37],"9":[25,48],"10104":[26,39],"923":[27,46],"10009":[28,69],"637":[29,24],"260":[30,33],"94":[31,36],"395":[32,73],"911":[33,0],"983":[34,6],"10008":[35,0],"635":[36,58],"700":[37,18],"26":[38,14],"257":[39,59],"197":[40,0],"655":[41,47],"748":[42,85],"212":[43,82],"398":[44,22],"248":[45,19],"279":[46,12],"354":[47,0],"36":[48,83],"350":[49,13],"861":[50,32],"132":[51,0],"473":[52,95],"359":[53,52],"936":[54,23],"939":[55,100],"428":[56,0],"937":[57,56],"303":[58,61],"887":[59,53],"10236":[60,96],"727":[0,3],"10186":[0,5],"981":[0,15],"282":[0,17],"10230":[0,20],"547":[0,21],"1013":[0,27],"324":[0,28],"530":[0,29],"10061":[0,30],"186":[0,31],"478":[0,35],"3":[0,40],"142":[0,41],"302":[0,43],"979":[0,49],"858":[0,50],"925":[0,51],"663":[0,54],"784":[0,55],"323":[0,57],"10233":[0,60],"865":[0,62],"818":[0,63],"475":[0,64],"666":[0,65],"10239":[0,66],"763":[0,68],"65":[0,70],"900":[0,71],"956":[0,72],"461":[0,75],"609":[0,76],"687":[0,77],"952":[0,78],"853":[0,79],"871":[0,80],"10248":[0,84],"115":[0,86],"849":[0,87],"154":[0,89],"10242":[0,90],"765":[0,92],"143":[0,94],"904":[0,97],"334":[0,98],"560":[0,99]},"mega":{"10309":[33.4,50.3],"10058":[0.7,2.1],"10089":[97.1,97.5],"10035":[75.4,93.3],"10034":[23.1,4.7],"10310":[90.7,92.5],"10059":[8.4,3.6],"10305":[92.7,83.7],"10304":[5.3,13.7],"10316":[97.9,98.4],"10307":[95.5,97.3],"10057":[3.4,0.4],"10042":[62.5,35.9],"10037":[71.8,71.1],"10067":[95.4,33.0],"10056":[99.5,94.2],"10325":[32.1,75.5],"10036":[96.2,90.4],"10050":[55.3,53.5],"10087":[79.7,97.7],"10291":[31.6,38.2],"10278":[77.0,19.4],"10293":[96.3,84.5],"10281":[56.7,67.3],"10287":[3.4,1.2],"10296":[89.1,98.4],"10285":[93.8,98.8],"10068":[12.9,17.7],"10051":[70.0,96.6],"10038":[74.6,88.0],"10321":[12.2,48.6],"10294":[44.7,50.6],"10041":[23.1,50.6],"10039":[86.1,42.2],"10088":[95.7,95.8],"10297":[42.6,47.8],"10052":[98.9,98.3],"10282":[99.2,98.8],"10076":[94.7,89.5],"10066":[24.0,2.9],"10046":[34.4,28.5],"10320":[85.7,91.9],"10289":[89.8,72.3],"10308":[84.4,84.0],"10064":[42.7,90.2],"10049":[45.5,72.0],"10033":[71.6,17.3]},"ns":60,"nd":100}</script>
 <script>
 const D=JSON.parse(document.getElementById('data').textContent);
-const T=[null,['노말','#9a9a7a'],['격투','#bb3a2e'],['비행','#8c79e0'],['독','#9a3f9a'],['땅','#cfa84e'],['바위','#ad9a3a'],['벌레','#94a51e'],['고스트','#6a5490'],['강철','#9e9eba'],['불꽃','#ea6a25'],['물','#4a83e8'],['풀','#5aa83c'],['전기','#e8b818'],['에스퍼','#ec4f7c'],['얼음','#5fb8b4'],['드래곤','#5a32e8'],['악','#5e4a3e'],['페어리','#dc7fa0']];
+const T=[null,['노말','#9a9a7a'],['격투','#bb3a2e'],['비행','#8c79e0'],['독','#9a3f9a'],['땅','#cfa84e'],['바위','#ad9a3a'],['벌레','#94a51e'],['고스트','#6a5490'],['강철','#9e9eba'],['불꽃','#ea6a25'],['물','#4a83e8'],['풀','#5aa83c'],['전기','#e8b818'],['에스퍼','#ec4f7c'],['얼음','#5fb8b4'],['드래곤','#5a32e8'],['악','#5e4a3e'],['페어리','#dc7fa0'],['천재','#7a4cf0']];
 // attacker -> {defender: multiplier}
 const E={1:{6:.5,8:0,9:.5},2:{1:2,3:.5,4:.5,6:2,7:.5,8:0,9:2,14:.5,15:2,17:2,18:.5},3:{2:2,6:.5,7:2,9:.5,12:2,13:.5},4:{4:.5,5:.5,6:.5,8:.5,9:0,12:2,18:2},5:{3:0,4:2,6:2,7:.5,9:2,10:2,12:.5,13:2},6:{2:.5,3:2,5:.5,7:2,9:.5,10:2,15:2},7:{2:.5,3:.5,4:.5,8:.5,9:.5,10:.5,12:2,14:2,17:2,18:.5},8:{1:0,8:2,14:2,17:.5},9:{6:2,9:.5,10:.5,11:.5,13:.5,15:2,18:2},10:{6:.5,7:2,9:2,10:.5,11:.5,12:2,15:2,16:.5},11:{5:2,6:2,10:2,11:.5,12:.5,16:.5},12:{3:.5,4:.5,5:2,6:2,7:.5,9:.5,10:.5,11:2,12:.5,16:.5},13:{3:2,5:0,11:2,12:.5,13:.5,16:.5},14:{2:2,4:2,9:.5,14:.5,17:0},15:{3:2,5:2,9:.5,10:.5,11:.5,12:2,15:.5,16:2},16:{9:.5,16:2,18:0},17:{2:.5,8:2,14:2,17:.5,18:.5},18:{2:2,4:.5,9:.5,10:.5,16:2,17:2}};
+E[19]={14:2,16:2,9:2,19:.5,18:.5};E[17][19]=2;E[7][19]=2;E[14][19]=.5;E[2][19]=.5;E[1][19]=0;
+const NT=19;
 const eff=(a,d)=>E[a][d]??1;
 const ABNOTE={26:'<b>부유</b>: 땅 타입 기술에 맞지 않습니다.',10:'<b>축전</b>: 전기 기술을 무효화하고 HP를 회복합니다.',11:'<b>저수</b>: 물 기술을 무효화하고 HP를 회복합니다.',18:'<b>타오르는불꽃</b>: 불꽃 기술을 무효화하고 불꽃 기술 위력이 오릅니다.',31:'<b>피뢰침</b>: 전기 기술을 끌어당겨 무효화하고 특수공격이 오릅니다.',114:'<b>마중물</b>: 물 기술을 끌어당겨 무효화하고 특수공격이 오릅니다.',157:'<b>초식</b>: 풀 기술을 무효화하고 공격이 오릅니다.',78:'<b>전기엔진</b>: 전기 기술을 무효화하고 스피드가 오릅니다.',87:'<b>건조피부</b>: 물 기술 무효·회복, 불꽃 기술 피해 1.25배.',47:'<b>두꺼운지방</b>: 불꽃·얼음 기술 피해가 절반이 됩니다.',85:'<b>내열</b>: 불꽃 기술 피해가 절반이 됩니다.',25:'<b>불가사의부적</b>: 효과가 굉장한 기술에만 피해를 받습니다.',272:'<b>정화의소금</b>: 고스트 기술 피해가 절반이 됩니다.',199:'<b>수포</b>: 불꽃 기술 피해가 절반이 됩니다.',218:'<b>복슬복슬</b>: 불꽃 기술 피해 2배, 접촉 기술 피해 절반.',273:'<b>노릇노릇바디</b>: 불꽃 기술을 무효화하고 방어가 크게 오릅니다.',297:'<b>흙먹기</b>: 땅 기술을 무효화하고 HP를 회복합니다.',270:'<b>열교환</b>: 불꽃 기술을 맞으면 공격이 오릅니다.',111:'<b>필터</b>: 효과가 굉장한 기술의 피해가 줄어듭니다.',116:'<b>하드록</b>: 효과가 굉장한 기술의 피해가 줄어듭니다.',232:'<b>프리즘아머</b>: 효과가 굉장한 기술의 피해가 줄어듭니다.',136:'<b>멀티스케일</b>: HP가 가득 찼을 때 받는 피해가 절반이 됩니다.',244:'<b>펑크록</b>: 소리 기술 피해가 절반이 됩니다.'};
 const STATN=['HP','공격','방어','특수공격','특수방어','스피드'];
 const P=D.p.map(p=>({id:p[0],sp:p[1],ko:p[2],form:p[3],en:p[4],types:p[5],st:p[6],ab:p[7],def:p[8],cat:p[9]}));
+// 오리지널 포켓몬 (팬 창작)
+Object.assign(D.a,{
+  c1:['분신술','Clone Art','등장한 턴에 받는 첫 번째 공격을 분신이 대신 맞는다.'],
+  c2:['천재의 직감','Genius Instinct','상대의 선공 기술을 미리 읽어 받지 않는다.'],
+  c3:['백발백중','Dead Eye','모든 기술이 반드시 명중하고 급소에 맞힐 확률이 오른다.'],
+  c4:['도감 작가','Dex Author','등장하면 상대의 약점을 모두 파악해, 효과가 굉장한 기술의 위력이 더 오른다.']});
+P.push(
+ {id:9001,sp:9001,ko:'승연닌자',form:'',en:'seungyeon-ninja',types:[19],st:[130,160,120,150,120,220],ab:[['c1',0],['c2',1]],def:1,cat:0,orig:true,
+  cls:'천재닌자 포켓몬',blurb:'빠른 몸놀림으로 먼저 치고 빠진다.',
+  mv:[['전민수리검',19,2,'90','항상 먼저 공격한다. (전용기)',1],['엑스포 분신술',19,1,'—','분신을 여럿 만들어 회피율과 스피드가 1랭크씩 오른다.',1],['인파이트',2,2,'120','사용 후 방어·특방이 떨어진다.'],['섀도볼',8,3,'80','상대 특방을 떨어뜨릴 때가 있다.']]},
+ {id:9002,sp:9002,ko:'연준나이퍼',form:'',en:'yeonjun-sniper',types:[19],st:[140,110,130,220,140,160],ab:[['c3',0],['c4',1]],def:1,cat:0,orig:true,
+  cls:'천재저격 포켓몬',blurb:'이 도감을 만든 작가. 멀리서 정확하게 맞힌다.',
+  mv:[['전민볼',19,3,'120','멀리서 던진 공이 반드시 급소에 맞는다. (전용기)',1],['엑스포 레이더',19,1,'—','상대를 분석해 다음 턴 공격이 상대의 약점 타입으로 바뀐다.',1],['10만볼트',13,3,'90','상대를 마비시킬 때가 있다.'],['냉동빔',15,3,'90','상대를 얼릴 때가 있다.']]});
+const DC=['','변화','물리','특수'];
 const RK=JSON.parse(document.getElementById('rank').textContent);
 const CAT=[['기본','base'],['리전폼','reg'],['메가진화','mega'],['거다이맥스','gmax'],['기타 폼','etc']];
 P.forEach(p=>{p.label=p.form||p.ko; p.key=(p.ko+' '+p.form+' '+p.en.replace(/-/g,' ')).toLowerCase().replace(/\s+/g,'')});
@@ -246,6 +269,7 @@ const ICON={
 18:'<path d="M12 1.5c.8 5.1 2.1 7.6 6.6 8.5-4.5.9-5.8 3.4-6.6 8.5-.8-5.1-2.1-7.6-6.6-8.5 4.5-.9 5.8-3.4 6.6-8.5zM19 14.5c.4 2.3 1 3.3 3 3.7-2 .4-2.6 1.4-3 3.7-.4-2.3-1-3.3-3-3.7 2-.4 2.6-1.4 3-3.7z"/>'
 };
 
+ICON[19]='<path d="M12 1.8a7.2 7.2 0 0 0-4.2 13c.8.6 1.2 1.4 1.2 2.3v.9h6v-.9c0-.9.4-1.7 1.2-2.3A7.2 7.2 0 0 0 12 1.8z"/><path d="M9 19.4h6v1.3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 20.7z"/><path d="M12 6.5l-2.2 4.4h2.4L11 15l3.4-5.2h-2.5L13 6.5z" fill="#000" fill-opacity=".28"/>';
 const svg=(n,c)=>`<svg class="${c}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">${ICON[n]}</svg>`;
 const avatar=(p,cls)=>{const a=T[p.types[0]][1],b=T[p.types[1]||p.types[0]][1];
   return `<span class="av ${cls}" style="--a:${a};--b:${b}" aria-hidden="true">${svg(p.types[0],'ai')}${p.types[1]?`<span class="a2" style="--tc:${b}">${svg(p.types[1],'')}</span>`:''}</span>`};
@@ -304,17 +328,17 @@ function pick(p){sugg.hidden=true;combo.setAttribute('aria-expanded','false');q.
 function render(p){
   const t1=T[p.types[0]][1];
   // defensive
-  const mul={};for(let a=1;a<=18;a++)mul[a]=p.types.reduce((m,d)=>m*eff(a,d),1);
+  const mul={};for(let a=1;a<=NT;a++)mul[a]=p.types.reduce((m,d)=>m*eff(a,d),1);
   const G=[[4,'x4','4배'],[2,'x2','2배'],[1,'x1','보통'],[.5,'xh','½배'],[.25,'xq','¼배'],[0,'x0','무효']];
   const groups=G.map(([v,c,l])=>{const ts=Object.keys(mul).filter(a=>mul[a]===v);if(!ts.length)return'';
     return `<div class="grp"><div><div class="mult" style="--c:var(--${c})">×${v===.5?'½':v===.25?'¼':v}</div><span class="lab">${l}</span></div><div class="list">${ts.map(chip).join('')}</div></div>`}).join('');
   const cls=v=>v===4?'m4':v===2?'m2':v===.5?'mh':v===.25?'mq':v===0?'m0':'';
   const fmt=v=>v===.5?'½':v===.25?'¼':v;
-  const table=`<div class="tbl"><table><thead><tr>${Array.from({length:18},(_,i)=>`<th style="--tc:${T[i+1][1]}">${T[i+1][0]}</th>`).join('')}</tr></thead><tbody><tr>${Array.from({length:18},(_,i)=>`<td class="${cls(mul[i+1])}">${fmt(mul[i+1])}</td>`).join('')}</tr></tbody></table></div>`;
+  const table=`<div class="tbl"><table><thead><tr>${Array.from({length:NT},(_,i)=>`<th style="--tc:${T[i+1][1]}">${T[i+1][0]}</th>`).join('')}</tr></thead><tbody><tr>${Array.from({length:NT},(_,i)=>`<td class="${cls(mul[i+1])}">${fmt(mul[i+1])}</td>`).join('')}</tr></tbody></table></div>`;
   const notes=p.ab.map(([a])=>ABNOTE[a]).filter(Boolean);
   const noteHtml=notes.length?`<div class="note">특성에 따라 상성이 달라질 수 있어요.<br>${notes.join('<br>')}</div>`:'';
   // offensive
-  const off=p.types.map(t=>{const se=[],nv=[],no=[];for(let d=1;d<=18;d++){const v=eff(t,d);if(v===2)se.push(d);else if(v===.5)nv.push(d);else if(v===0)no.push(d)}
+  const off=p.types.map(t=>{const se=[],nv=[],no=[];for(let d=1;d<=NT;d++){const v=eff(t,d);if(v===2)se.push(d);else if(v===.5)nv.push(d);else if(v===0)no.push(d)}
     return `<div class="row"><div>${chip(t)}<span class="k">기술로 공격 시</span></div><div style="flex-direction:column;gap:6px">
       <div style="display:flex;flex-wrap:wrap;gap:5px;align-items:center"><span class="k" style="width:58px">효과 굉장</span>${se.map(chip).join('')||'<span class="k">없음</span>'}</div>
       <div style="display:flex;flex-wrap:wrap;gap:5px;align-items:center"><span class="k" style="width:58px">효과 별로</span>${nv.map(chip).join('')||'<span class="k">없음</span>'}</div>
@@ -324,7 +348,7 @@ function render(p){
   const bc=v=>v>=130?'#2f9e6f':v>=100?'#5bb04a':v>=80?'#c5b52a':v>=60?'#e39a33':'#d9583b';
   const stats=p.st.map((v,i)=>`<span class="sl">${STATN[i]}</span><span class="sv">${v}</span><div class="bar"><i style="width:${Math.min(v/200,1)*100}%;--bc:${bc(v)}"></i></div>`).join('')+`<div class="total"><span>합계</span><span>${total}</span></div>`;
   // abilities
-  const abil=p.ab.map(([a,h])=>{const A=D.a[a]||['?','',''];return `<div class="ab"><div class="t"><b>${esc(A[0])}</b><span class="enn">${esc(A[1])}</span><span class="tag ${h?'h':''}">${h?'숨겨진 특성':'일반 특성'}</span></div><p>${A[2]?esc(A[2]):'최근 추가된 특성이라 아직 요약이 없어요.'} <a class="wk" href="https://pokemon.fandom.com/ko/wiki/${encodeURIComponent(A[0]+'_(특성)')}" target="_blank" rel="noopener">포켓몬 위키에서 보기 ↗</a></p></div>`}).join('');
+  const abil=p.ab.map(([a,h])=>{const A=D.a[a]||['?','',''];return `<div class="ab"><div class="t"><b>${esc(A[0])}</b><span class="enn">${esc(A[1])}</span><span class="tag ${h?'h':''}">${h?'숨겨진 특성':'일반 특성'}</span></div><p>${A[2]?esc(A[2]):'최근 추가된 특성이라 아직 요약이 없어요.'}${String(a)[0]==='c'?' <span class="tag h">오리지널</span>':` <a class="wk" href="https://pokemon.fandom.com/ko/wiki/${encodeURIComponent(A[0]+'_(특성)')}" target="_blank" rel="noopener">포켓몬 위키에서 보기 ↗</a>`}</p></div>`}).join('');
   // forms
   const sibs=P.filter(x=>x.sp===p.sp);
   const fcard=x=>{const tot=x.st.reduce((a,b)=>a+b,0);
@@ -341,7 +365,7 @@ function render(p){
   const baseP=p.cat===2?P.find(x=>x.sp===p.sp&&x.def):p;
   const rk=RK.rank[baseP.id]||[0,0], mr=RK.mega[p.id];
   const rbox=(lab,r,n)=>`<div class="rb"><span class="rl">${lab}</span>${r?`<b>${r}<small>위</small></b>`:`<b class="out">순위권 밖</b><span class="rl">TOP ${n} 집계</span>`}</div>`;
-  const rankHtml=`<div class="rank"><div class="rh">랭크 배틀 순위 <span>레귤레이션 M-C · 2026.10.02 기준${p.cat===2?` · ${esc(baseP.ko)} 기준`:''}</span></div>
+  const rankHtml=p.orig?`<div class="rank"><div class="rh">오리지널 포켓몬 <span>이 사이트에서 만든 팬 창작 포켓몬이라 랭크 배틀 기록이 없어요.</span></div><div class="meta2">분류 <b>${esc(p.cls)}</b> · ${esc(p.blurb)}</div></div>`:`<div class="rank"><div class="rh">랭크 배틀 순위 <span>레귤레이션 M-C · 2026.10.02 기준${p.cat===2?` · ${esc(baseP.ko)} 기준`:''}</span></div>
     <div class="rbs">${rbox('싱글',rk[0],RK.ns)}${rbox('더블',rk[1],RK.nd)}
     ${p.cat===2?(mr?`<div class="rb mega"><span class="rl">메가스톤 채용률</span><b>${mr[0]}<small>%</small></b><span class="rl">싱글</span></div><div class="rb mega"><span class="rl">메가스톤 채용률</span><b>${mr[1]}<small>%</small></b><span class="rl">더블</span></div>`:`<div class="rb mega"><span class="rl">메가스톤 채용률</span><b class="out">집계 없음</b></div>`):''}</div></div>`;
   out.innerHTML=`
@@ -359,15 +383,16 @@ function render(p){
   <div class="cols">
     <section class="card"><h2>종족값</h2><div class="stats">${stats}</div></section>
     <section class="card"><h2>특성</h2><div class="abil">${abil}</div></section>
-  </div></div>`;
+  </div>
+  ${p.mv?`<section class="card"><h2>주특기 기술</h2><div class="moves">${p.mv.map(([n,ty,dc,pw,ef,sig])=>`<div class="mv2"><span class="chip" style="--tc:${T[ty][1]}">${svg(ty,'ci')}${T[ty][0]}</span><b class="${sig?'sig':''}">${esc(n)}</b><span class="dc">${DC[dc]} · 위력 ${pw}</span><span class="ef">${esc(ef)}</span></div>`).join('')}</div></section>`:''}
+  </div>`;
   document.getElementById('backbtn').onclick=()=>{q.value='';renderHome()};
   out.querySelectorAll('.fc').forEach(b=>b.onclick=()=>pick(P.find(x=>x.id===+b.dataset.id)));
 }
 
 const META=JSON.parse(document.getElementById('meta').textContent);
 const byId=Object.fromEntries(P.map(p=>[p.id,p]));
-const DC=['','변화','물리','특수'];
-const defMul=types=>{const m={};for(let a=1;a<=18;a++)m[a]=types.reduce((x,d)=>x*eff(a,d),1);return m};
+const defMul=types=>{const m={};for(let a=1;a<=NT;a++)m[a]=types.reduce((x,d)=>x*eff(a,d),1);return m};
 function renderHome(){
   const cards=META.map(m=>{
     const p=byId[m.id], mg=m.mega?byId[m.mega]:null, mul=defMul(p.types);
